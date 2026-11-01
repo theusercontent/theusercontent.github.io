@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" data-theme="noir">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>404 — Page not found / Akaash R.</title>
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#0A0A0A" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .not-found {
+        min-height: 100svh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .not-found main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-block: 8rem 4rem;
+      }
+
+      .not-found h1 {
+        max-width: 12ch;
+        margin: 1.2rem 0 2rem;
+        font-size: clamp(3.6rem, 12vw, 11rem);
+        font-weight: 700;
+        line-height: 0.8;
+        letter-spacing: -0.06em;
+        text-transform: uppercase;
+      }
+
+      .not-found h1 span {
+        color: var(--accent);
+      }
+
+      .not-found p {
+        max-width: 38ch;
+        margin: 0;
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      .nf-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        width: fit-content;
+        margin-top: 2.5rem;
+        padding-bottom: 0.35rem;
+        border-bottom: 2px solid var(--accent);
+        font-family: "Space Mono", Consolas, monospace;
+        font-size: 0.68rem;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+      }
+
+      .nf-link span {
+        color: var(--accent);
+      }
+
+      .nf-link:hover {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+
+  <body class="not-found">
+    <header class="site-header is-scrolled">
+      <div class="header-inner container">
+        <a class="brand" href="/" aria-label="Akaash R. — home">
+          <span class="brand-mark">AK</span>
+          <span class="brand-meta">/2026</span>
+        </a>
+        <span></span>
+        <a class="menu-button" href="/">Return to index</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <p class="micro muted">404 / Off the map</p>
+      <h1>This page<br />doesn't <span>ship.</span></h1>
+      <p>
+        The URL is wrong, the page moved, or the experiment never made it out of
+        the lab. The index is still where you left it.
+      </p>
+      <a class="nf-link" href="/">Back to the index <span aria-hidden="true">↗</span></a>
+    </main>
+
+    <footer class="site-footer container micro">
+      <span class="footer-mark">AK <span>/ 2026</span></span>
+      <span>Designed &amp; built in public. No templates. No trackers.</span>
+      <a href="https://github.com/theusercontent" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </footer>
+  </body>
+</html>
