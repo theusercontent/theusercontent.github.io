@@ -377,6 +377,7 @@ svg {
   min-height: 100svh;
   padding-top: clamp(6.5rem, 12vh, 9rem);
   border-bottom: 1px solid var(--line);
+  overflow: clip;
 }
 
 .hero-meta {
